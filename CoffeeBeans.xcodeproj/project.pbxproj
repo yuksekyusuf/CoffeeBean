@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57C5E5AE2775764900CFCF39 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 57C5E5AD2775764900CFCF39 /* menu.json */; };
 		57DD60C027756F8F00A20B5C /* CoffeeBeansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60BF27756F8F00A20B5C /* CoffeeBeansApp.swift */; };
 		57DD60C227756F8F00A20B5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60C127756F8F00A20B5C /* ContentView.swift */; };
 		57DD60C427756F9200A20B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DD60C327756F9200A20B5C /* Assets.xcassets */; };
 		57DD60C727756F9200A20B5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DD60C627756F9200A20B5C /* Preview Assets.xcassets */; };
+		57DD60CE2775702200A20B5C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60CD2775702200A20B5C /* Drink.swift */; };
+		57DD60D02775713500A20B5C /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60CF2775713500A20B5C /* MenuSection.swift */; };
+		57DD60D22775716B00A20B5C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60D12775716B00A20B5C /* Menu.swift */; };
+		57DD60D4277574E300A20B5C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD60D3277574E300A20B5C /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57C5E5AD2775764900CFCF39 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		57DD60BC27756F8F00A20B5C /* CoffeeBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DD60BF27756F8F00A20B5C /* CoffeeBeansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeBeansApp.swift; sourceTree = "<group>"; };
 		57DD60C127756F8F00A20B5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57DD60C327756F9200A20B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57DD60C627756F9200A20B5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57DD60CD2775702200A20B5C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		57DD60CF2775713500A20B5C /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		57DD60D12775716B00A20B5C /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		57DD60D3277574E300A20B5C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +63,13 @@
 			children = (
 				57DD60BF27756F8F00A20B5C /* CoffeeBeansApp.swift */,
 				57DD60C127756F8F00A20B5C /* ContentView.swift */,
+				57DD60D3277574E300A20B5C /* MenuView.swift */,
 				57DD60C327756F9200A20B5C /* Assets.xcassets */,
+				57DD60CD2775702200A20B5C /* Drink.swift */,
+				57C5E5AD2775764900CFCF39 /* menu.json */,
 				57DD60C527756F9200A20B5C /* Preview Content */,
+				57DD60CF2775713500A20B5C /* MenuSection.swift */,
+				57DD60D12775716B00A20B5C /* Menu.swift */,
 			);
 			path = CoffeeBeans;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C5E5AE2775764900CFCF39 /* menu.json in Resources */,
 				57DD60C727756F9200A20B5C /* Preview Assets.xcassets in Resources */,
 				57DD60C427756F9200A20B5C /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				57DD60C227756F8F00A20B5C /* ContentView.swift in Sources */,
+				57DD60D4277574E300A20B5C /* MenuView.swift in Sources */,
+				57DD60CE2775702200A20B5C /* Drink.swift in Sources */,
+				57DD60D02775713500A20B5C /* MenuSection.swift in Sources */,
 				57DD60C027756F8F00A20B5C /* CoffeeBeansApp.swift in Sources */,
+				57DD60D22775716B00A20B5C /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
