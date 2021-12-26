@@ -52,6 +52,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5713FD6427780D8800D76561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				578B304127766DB600B55CB6 /* CustomizeView.swift */,
+				57DD60D3277574E300A20B5C /* MenuView.swift */,
+				57DD60C127756F8F00A20B5C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5713FD6527780DA100D76561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57DD60D12775716B00A20B5C /* Menu.swift */,
+				57DD60CF2775713500A20B5C /* MenuSection.swift */,
+				57DD60CD2775702200A20B5C /* Drink.swift */,
+				5713FD5E2777F6FA00D76561 /* Serving.swift */,
+				5723C61E277671CA00DECE0D /* ConfigurationOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5713FD6627780E0800D76561 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5713FD622777F88900D76561 /* History.swift */,
+				5713FD602777F82B00D76561 /* FileManager-DocumentsDirectory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		57DD60B327756F8F00A20B5C = {
 			isa = PBXGroup;
 			children = (
@@ -71,20 +102,13 @@
 		57DD60BE27756F8F00A20B5C /* CoffeeBeans */ = {
 			isa = PBXGroup;
 			children = (
-				57DD60BF27756F8F00A20B5C /* CoffeeBeansApp.swift */,
-				57DD60C127756F8F00A20B5C /* ContentView.swift */,
-				5723C61E277671CA00DECE0D /* ConfigurationOption.swift */,
-				57DD60D3277574E300A20B5C /* MenuView.swift */,
+				5713FD6627780E0800D76561 /* Services */,
+				5713FD6527780DA100D76561 /* Models */,
+				5713FD6427780D8800D76561 /* Views */,
 				57DD60C327756F9200A20B5C /* Assets.xcassets */,
-				57DD60CD2775702200A20B5C /* Drink.swift */,
-				5713FD5E2777F6FA00D76561 /* Serving.swift */,
-				5713FD602777F82B00D76561 /* FileManager-DocumentsDirectory.swift */,
-				5713FD622777F88900D76561 /* History.swift */,
-				57DD60D12775716B00A20B5C /* Menu.swift */,
 				57FF304027767CA700435F8B /* menu.json */,
 				57DD60C527756F9200A20B5C /* Preview Content */,
-				57DD60CF2775713500A20B5C /* MenuSection.swift */,
-				578B304127766DB600B55CB6 /* CustomizeView.swift */,
+				57DD60BF27756F8F00A20B5C /* CoffeeBeansApp.swift */,
 			);
 			path = CoffeeBeans;
 			sourceTree = "<group>";

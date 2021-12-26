@@ -9,15 +9,17 @@ import SwiftUI
 
 struct CustomizeView: View {
     let drink: Drink
+    let dismiss: () -> Void
     
     @EnvironmentObject var menu: Menu
+    @EnvironmentObject var history: History
     
     @State private var size = 0
     @State private var isDecaf = false
     @State private var extraShots = 0
     @State private var milk = ConfigurationOption.none
     @State private var syrup = ConfigurationOption.none
-
+    @State private var isFirstApperance = true
     
     let sizeOptions = ["Small", "Medium", "Large"]
     
@@ -93,12 +95,30 @@ struct CustomizeView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(drink.name)
+        .toolbar {
+            Button("Save") {
+                history.add(drink, size: sizeOptions[size],
+                            extraShots: extraShots, isDecaf: isDecaf,
+                            milk: milk, syrup: syrup, caffine: caffeine,
+                            calories: calories)
+                dismiss()
+            }
+        }
+        .onAppear {
+            
+            guard isFirstApperance else { return }
+            if drink.servedWithMilk {
+                milk = menu.milkOptions[1]
+            }
+            
+            isFirstApperance = false
+        }
     }
 }
 
 struct CustomizeView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomizeView(drink: Drink.example)
+        CustomizeView(drink: Drink.example) { }
             .environmentObject(Menu())
     }
 }

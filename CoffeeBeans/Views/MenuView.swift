@@ -10,6 +10,9 @@ import SwiftUI
 struct MenuView: View {
     
     @EnvironmentObject var menu: Menu
+    @Environment(\.dismiss) var dismiss
+    @State private var searchText = ""
+
     
     let columns = [
         GridItem(.adaptive(minimum: 150))
@@ -24,10 +27,12 @@ struct MenuView: View {
                     ForEach(menu.sections) { section in
                         
                         Section {
-                            ForEach(section.drinks) { drink in
+                            ForEach(section.matches(for: searchText)) { drink in
                                 
                                 NavigationLink {
-                                    CustomizeView(drink: drink)
+                                    CustomizeView(drink: drink) {
+                                        dismiss()
+                                    }
                                 } label: {
                                     VStack {
                                         
@@ -58,6 +63,7 @@ struct MenuView: View {
                 
             }
             .navigationTitle("Add Drink")
+            .searchable(text: $searchText)
         }
     }
 }
